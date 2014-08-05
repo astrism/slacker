@@ -6,7 +6,7 @@ module.exports = function (app) {
 
 
     init: function () {
-      this.$.company = JSON.parse(atob(this.$routeParams.data));
+      this.$.company = JSON.parse(atob(decodeURIComponent(this.$routeParams.data)));
       this.$.characters = require('../models/characters');
 
       // Key events

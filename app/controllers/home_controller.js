@@ -15,7 +15,7 @@ module.exports = function (app) {
 
     createCompany: function () {
       var data = btoa(JSON.stringify(this.$.company));
-      this.$location.path('/' + data);
+      this.$location.path('/' + encodeURIComponent(data));
     }
   });
   
