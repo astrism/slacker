@@ -9,6 +9,6 @@ Install the dependencies:
 
     npm install
 
-    npm start
+    gulp
     
 You now have a server running at [http://localhost:8080](http://localhost:8080)
