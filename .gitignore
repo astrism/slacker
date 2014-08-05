@@ -14,3 +14,4 @@ bower/**
 
 # Built assets
 build/**
+*.log
